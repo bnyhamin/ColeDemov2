@@ -171,7 +171,12 @@ public class ControlAcceso : MonoBehaviour
         WWW conneccion = new WWW("http://167.71.101.78/colegio3d/registro.php?usuario=" + txtUsuario1.text + "&correo=" + txtCorreo.text + "&dni=" + txtDni.text + "&clave=" + txtClave1.text);
         yield return (conneccion);
         print("Dato de conneccion:"+ conneccion);
-        if (conneccion.text == "402")
+        if (conneccion.text == "999")
+        {
+            print("Correo incorrecto");
+            //textError.text = "Usuario incorrecto";
+            MostrarError("Ingrese Correo incorrecto");            
+        }else if (conneccion.text == "402")
         {
             print("Usuario ya existe");
             //textError.text = "Usuario ya existe";

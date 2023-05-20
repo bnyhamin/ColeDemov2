@@ -2282,7 +2282,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ingrese Dni
+  m_Text: "Ingrese Doc Identificaci\xF3n"
 --- !u!222 &658259489
 CanvasRenderer:
   m_ObjectHideFlags: 0
